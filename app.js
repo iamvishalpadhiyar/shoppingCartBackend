@@ -29,6 +29,8 @@ app.use("/images", imagesRouter);
 app.use('/productsImages', express.static('productsImages'));
 app.use("/cart", cartRouter);
 
+
+
 app.listen(PORT, () => {
     console.log(`Server running at http://127.0.0.1:${PORT}`);
 });

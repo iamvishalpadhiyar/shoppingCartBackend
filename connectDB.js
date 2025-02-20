@@ -7,7 +7,7 @@ const dbURL = `${process.env.db}${dbName}`;
 
 const connectDB = async () => {
     try {
-        await mongoose.connect(dbURL);
+        await mongoose.connect(userDB);
         console.log("Database Connected");
     }
     catch(error){
